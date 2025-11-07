@@ -1,0 +1,4 @@
+org\aygo\Payments$PaymentSummary.class
+org\aygo\Payments$PaymentCreationRequest.class
+org\aygo\Payments.class
+org\aygo\Payments$PaymentUpdateRequest.class

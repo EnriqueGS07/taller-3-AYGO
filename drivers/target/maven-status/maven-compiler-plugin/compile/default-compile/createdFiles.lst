@@ -1,0 +1,4 @@
+org\aygo\Drivers.class
+org\aygo\Drivers$CreateDriverRequest.class
+org\aygo\Drivers$TravelUpdateRequest.class
+org\aygo\Drivers$DriverSummary.class

@@ -1,0 +1,4 @@
+org\aygo\Rides$CreateRideRequest.class
+org\aygo\Rides$RideUpdateRequest.class
+org\aygo\Rides.class
+org\aygo\Rides$RideSummary.class
