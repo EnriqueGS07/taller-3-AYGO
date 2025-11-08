@@ -10,6 +10,9 @@
   - `MongoDB` desplegado en un `Amazon EC2` como base de datos operacional responsable de persistir los documentos de cada dominio.
 
 - **Seguridad y configuración:** cada Lambda recibe las credenciales de conexión vía variables de entorno (`MONGO_URI`, `MONGO_DB`, `MONGO_COLLECTION`) y usa un cliente `MongoClient` reutilizable para minimizar latencia en conexiones frías.
+- Diagrama general
+<img width="632" height="272" alt="image" src="https://github.com/user-attachments/assets/76e5ec5b-d9fc-4a8f-bfdc-5fb6854c5637" />
+
 
 ### 2. Razones detrás de las decisiones tecnológicas
 
@@ -71,3 +74,7 @@
 - **Logs:** cada Lambda registra excepciones en CloudWatch Logs mediante el `Context` de AWS, permitiendo auditar errores y trazas.
 - **Pruebas manuales:** se pueden efectuar con Postman o `curl` contra el endpoint del API Gateway, enviando cuerpos JSON y parámetros de consulta para operaciones puntuales.
 - **Pruebas automáticas futuras:** agregar pruebas unitarias con JUnit y mocks de `MongoCollection` para validar reglas de negocio sin depender del entorno en la nube.
+
+### 8. Video demo
+
+https://youtu.be/ZIVsbuFDz-I
